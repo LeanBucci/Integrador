@@ -4,79 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaquieries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap");
-      </style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    </style>
     <title>Registro</title>
   </head>
   <body>
-</head>
-<body>
-  <header>
-    <div class="img">
-      <img
-        src="./assets/imagen-removebg-preview.png"
-        alt="Logo de Cheff Online"
-      />
-    </div>
-    <div>
-      <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="#">Recetas Destacadas</a></li>
-        <li><a href="./registro.html">Registrate</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </div>
-    <div>
-      <!-- Search -->
-      <input id="search" placeholder="Busqueda" />
-    </div>
-  </header>
-<!-- Formulario -->
-  <section class="form">
-    <h3>Regitrate</h3>
-    <fieldset>
-      <div>
-        <label for="name">Nombre</label>
-        <input id="name" placeholder="Nombre Completo" required />
-        <label for="surename">Apellido</label>
-        <input id="surename" placeholder="Apellido Completo" required />
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Correo Electrónico"
-          required
+    <header>
+      <div class="img">
+        <img
+          src="./assets/imagen-removebg-preview.png"
+          alt="Logo de Cheff Online"
         />
-        <label> Contraseña</label>
-        <input type="password" placeholder="Contraseña" required />
       </div>
-    </fieldset>
-    <fieldset>
-      <label for="age"
-        >Edad: <input id="age" type="number" name="age" min="13" max="120"
-      /></label>
-      <label for="referrer"
-        >¿Cómo te enteraste de nosotros?
-        <select id="referrer" name="referrer">
-          <option>Seleccionar...</option>
-          <option>Instagram</option>
-          <option>YouTube</option>
-          <option>Amigos</option>
-          <option>Otro</option>
-        </select>
-      </label>
-      <label for="commentaries"
-        >Dejanos un comentario:
-        <textarea placeholder="Escribe un comentario"></textarea>
-      </label>
-    </fieldset>
-    <div class="buttons">
-      <button type="submit">Enviar</button>
-      <button>Cancelar</button>
-    </div>
-  </section>
+      <div class="menu">
+        <label for="menuToggle"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="menuToggle" />
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="#">Recetas Destacadas</a></li>
+          <li><a href="./registro.html">Registrate</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <label for="searchToggle">
+          <i class="fa-solid fa-magnifying-glass"></i
+        ></label>
+        <input type="checkbox" id="searchToggle" />
+        <input id="search" placeholder="Busqueda" />
+      </div>
+    </header>
+    <!-- Formulario -->
+    <section class="form">
+      <h3>Regítrate</h3>
+      <fieldset>
+        <div>
+          <label for="name">Nombre</label>
+          <input id="name" placeholder="Nombre Completo" required />
+          <label for="surename">Apellido</label>
+          <input id="surename" placeholder="Apellido Completo" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Correo Electrónico"
+            required
+          />
+          <label> Contraseña</label>
+          <input type="password" placeholder="Contraseña" required />
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="age"
+          >Edad: <input id="age" type="number" name="age" min="13" max="120"
+        /></label>
+        <label for="referrer"
+          >¿Cómo te enteraste de nosotros?
+          <select id="referrer" name="referrer">
+            <option>Seleccionar...</option>
+            <option>Instagram</option>
+            <option>YouTube</option>
+            <option>Amigos</option>
+            <option>Otro</option>
+          </select>
+        </label>
+        <label for="commentaries"
+          >Dejanos un comentario:
+          <textarea placeholder="Escribe un comentario"></textarea>
+        </label>
+      </fieldset>
+      <div class="buttons">
+        <button type="submit">Enviar</button>
+        <button>Cancelar</button>
+      </div>
+    </section>
+    <section class="form login">
+      <h3>Login</h3>
+      <fieldset>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Correo Electrónico"
+            required
+          />
+          <label> Contraseña</label>
+          <input type="password" placeholder="Contraseña" required />
+        </div>
+        <div class="loginbutton">
+          <button type="submit">Login</button>
+        </div>
+      </fieldset>
   </body>
 </html>

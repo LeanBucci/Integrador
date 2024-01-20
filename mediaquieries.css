@@ -1,0 +1,63 @@
+@media (max-width: 1300px) {
+  .hero img {
+    display: none;
+  }
+  .slogan {
+    text-align: left;
+  }
+  .productContainer {
+    justify-content: center;
+  }
+  .aboutUsContainer h2 {
+    margin-top: 20px;
+  }
+  .hero p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 992px) {
+  header ul {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 5%;
+    width: 90%;
+    padding: 20px;
+    background-color: var(--backgroundColorSecondary);
+    border: 2px solid var(--detailColor);
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    display: none;
+  }
+  .menu i {
+    display: block;
+  }
+  #menuToggle:checked + ul {
+    display: flex;
+  }
+
+  .search i {
+    display: block;
+  }
+  .search input {
+    display: none;
+  }
+  #searchToggle:checked + input {
+    display: flex;
+  }
+  button {
+    width: 100%;
+  }
+  .contactenos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .dataInfo {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  iframe {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaquieries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    </style>
+    <title>Cheff Online</title>
+  </head>
+  <body>
+    <header>
+      <div class="img">
+        <img
+          src="./assets/imagen-removebg-preview.png"
+          alt="Logo de Cheff Online"
+        />
+      </div>
+      <div class="menu">
+        <label for="menuToggle"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="menuToggle" />
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="#">Quienes Somos</a></li>
+          <li><a href="#">Recetas</a></li>
+          <li><a href="./registro.html">Registrate</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <label for="searchToggle">
+          <i class="fa-solid fa-magnifying-glass"></i
+        ></label>
+        <input type="checkbox" id="searchToggle" />
+        <input id="search" placeholder="Busqueda" />
+      </div>
+    </header>
+
+    <!-- Contacto---------------------------------------------------------------- -->
+    <div class="contactenos">
+      <div class="dataInfo">
+        <h3>Contactenos</h3>
+        <fieldset>
+          <div>
+            <label for="name">Nombre</label>
+            <input id="name" placeholder="Nombre Completo" required />
+            <label for="surename">Apellido</label>
+            <input id="surename" placeholder="Apellido Completo" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Correo Electrónico"
+              required
+            />
+            <label for="commentaries"
+              >Dejanos un comentario:
+              <textarea placeholder="Escribe un comentario"></textarea>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="dataInfo dataNuestra">
+        <div clas="datos">
+          <h3>Nuestros datos:</h3>
+          <br />
+          <span>Email: cheffonline@yahoo.com</span>
+          <br />
+          <br />
+          <span>Dirección: Av 9 de Julio 1110, CABA</span>
+          <br />
+          <br />
+          <span>Tel: +54 011 15 4444-4455</span>
+          <br />
+          <br />
+          <span>Instagram:@cheffonline</span>
+        </div>
+        <div class="mapa">
+          <div class="mapaGoogle">
+            <iframe
+              width="820"
+              height="560"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=av+9+de+julio+1100%2C+capital&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://online-timer.me/"></a><br /><a
+              href="https://online.stopwatch-timer.net/"
+            ></a
+            ><br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
